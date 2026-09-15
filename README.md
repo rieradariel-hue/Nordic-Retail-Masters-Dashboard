@@ -1,39 +1,27 @@
-# Nordic Retail Masters — Interactive Sales & Profitability Dashboard
+# Nordic Retail Masters Dashboard
 
-An interactive Power BI dashboard analyzing product performance across a multi-brand retail dataset. Built as an individual assignment during the Data Science program (YH, EC Utbildning).
+This is one of my individual assignments from the Data Science program at EC Utbildning (YH). The task was to take a raw retail dataset and turn it into a Power BI dashboard people could actually filter and explore, not just a static report.
 
-![Dashboard preview](screenshot.png)
+## What it's about
 
-## What it does
+It's a "Product Performance" dashboard for a made-up retail company, looking at a few product categories (electronics, home, sports, apparel) and comparing sales and profit across different brands and products. There's also a breakdown of how much each category sells in terms of quantity. You can filter by year and category using the panel on the left, and reset everything with one click.
 
-The report tracks sales, profit, and profit margin across product categories and brands, helping identify which products and brands drive the most value.
+I tried to keep it clean and not overload it with too many visuals on one page.
 
-**Key metrics covered:**
-- Total sales: 151,141,385 kr
-- Total profit: 53,366,614 kr
-- Units sold: 161,509
-- Blended profit margin: 35.31%
+![Product Performance page](Screenshot%202026-09-15%20122141.png)
 
-**Views included:**
-- Category-level breakdown (Sports, Home, Electronics, Apparel) with sales, profit, quantity, and margin per category
-- Top 10 brands by sales and profit (Solaria, Contoso, Fabrikam, UrbanPeak, Northwind)
-- Top 10 best-selling products
-- Quantity distribution by category (donut chart)
-- Interactive filters for year and category, with a reset-filters control
+## Tools used
 
-## Tools & techniques
+- Power BI Desktop for the report and visuals
+- Power Query to clean and shape the data before building anything
+- DAX for the measures behind the KPIs (sales, profit, margin etc)
 
-- **Power BI Desktop** — data modeling, DAX measures, interactive visuals
-- **Power Query** — data transformation and cleaning
-- Category-level KPI cards, ranked bar charts, and a donut chart for distribution
-- Slicers and bookmarks for interactive filtering
+Still getting more comfortable with DAX so some of the measures could probably be written more efficiently.
 
-## How to explore it
+![Brand comparison view](Screenshot%202026-09-15%20122227.png)
 
-1. Download `FinalAssignment.pbix` from this repo.
-2. Open it in [Power BI Desktop](https://www.microsoft.com/en-us/power-platform/products/power-bi/downloads) (free).
-3. Use the Year and Category filters on the left panel to explore different slices of the data.
+![Product ranking view](Screenshot%202026-09-15%20122340.png)
 
-## About this project
+## How to open it
 
-Built to practice end-to-end BI development: data modeling, DAX calculations, and dashboard design for a retail business scenario, with a focus on making profitability and product performance easy to compare at a glance.
+Download the `.pbix` file and open it in Power BI Desktop (free to download). Might ask to refresh the data source when you open it, that's normal.
